@@ -78,16 +78,6 @@ a:hover {
 
 
 
-
-
-
-
-
-
-
-
-
-
 /* NAVIGATION -------------- */
 .logo {
     width: 100px;
@@ -396,4 +386,19 @@ header img {
         
     }
     footer img { width: 40%; }
+}
+
+
+@media screen and (max-width: 1066px) {
+    #sound .demo_songs iframe {
+        width: 20%;
+        min-width: 350px;
+        margin: 10px;
+        transition: all .5s cubic-bezier(.215, .61, .355, 1);
+    }
+    #sound .demo_songs iframe:hover {
+        scale: 1.1;
+        width: 35%;
+        transition: all .5s cubic-bezier(.215, .61, .355, 1);
+    }
 }

@@ -12,6 +12,9 @@
     justify-content: center;
     align-items: center;
 }
+#menu #menu_text {
+    z-index: 1;
+}
 
 .menu_open {
     display: flex;

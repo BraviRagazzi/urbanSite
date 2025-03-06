@@ -22,6 +22,9 @@ document.querySelectorAll('iframe').forEach(function(iframe) {
         document.querySelectorAll('iframe').forEach(function(otherIframe) {
             if (otherIframe !== iframe) {
                 otherIframe.style.opacity = '.5';
+                otherIframe.style.zIndex = '0';
+                iframe.style.opacity = '1';
+                iframe.style.zIndex = '1'
             }
         });
     });
