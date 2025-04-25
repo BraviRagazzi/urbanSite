@@ -116,7 +116,7 @@ a:hover {
         z-index: 2;
     }
 
-    /* title */
+    /* titolo delle sezioni */
     .title {
         position: relative;
         top: 60px;
@@ -193,10 +193,10 @@ header img {
 
 
 /* Sound ----------*/
-#sound {
+#playlist {
     height: auto;
 }
-#sound .demo_songs { 
+#playlist .demo_songs { 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -208,20 +208,20 @@ header img {
     margin-top: 100px;
 }
 
-#sound .demo_songs iframe {
+#playlist .demo_songs iframe {
     width: 20%;
     min-width: 300px;
     margin: 10px;
     transition: all .5s cubic-bezier(.215, .61, .355, 1);
 }
-#sound .demo_songs iframe:hover {
+#playlist .demo_songs iframe:hover {
     scale: 1.1;
     width: 35%;
     transition: all .5s cubic-bezier(.215, .61, .355, 1);
 }
 
 
-#sound a h1 {
+.more_cont {
     width: 100%;
     height: 50px;
     margin: 10px;
@@ -296,6 +296,7 @@ header img {
     a { text-decoration: none; color: var(--white); mix-blend-mode: difference;}
     .menu_foo h1 {
         margin: 10px;
+        text-align: center;
     }
 
 
