@@ -12,6 +12,10 @@ function closeMenu() {
         text.textContent = 'close.';
         // togliere lo scroll
         document.body.style.overflow = 'hidden';
+
+
+        // quando apre il menu, cambia il mouse
+        document.body.classList.add('circle_mouse');
     }
     else {
         text.textContent = 'menu.';
@@ -22,6 +26,8 @@ function closeMenu() {
 
     menu.classList.toggle('menu_open');
     menu.classList.toggle('menu_close');
+
+
 }
 
 

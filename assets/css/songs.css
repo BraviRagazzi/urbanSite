@@ -1,0 +1,13 @@
+#prima_section {
+    height: 10vh;
+}
+#prima_section img {
+    width: 15%;
+}
+
+
+@media (max-width: 1000px) {
+    #prima_section img {
+        width: 40%;
+    }
+}
