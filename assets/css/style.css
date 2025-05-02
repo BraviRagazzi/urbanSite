@@ -161,8 +161,9 @@ header img {
 
 
 /* artits ---------*/
-#top_artists {
+#artists_container {
     height: auto;
+    border: solid red 2px;
 }
 
 .artists_container {
