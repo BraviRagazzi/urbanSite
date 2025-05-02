@@ -11,26 +11,6 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-// SONGS
-    // Quando passi sopra un iframe, nascondi tutti gli altri iframe
-    document.querySelectorAll('iframe').forEach(function(iframe) {
-        iframe.addEventListener('mouseenter', function() {
-            document.querySelectorAll('iframe').forEach(function(otherIframe) {
-                if (otherIframe !== iframe) {
-                    otherIframe.style.opacity = '.5';
-                    otherIframe.style.zIndex = '0';
-                    iframe.style.opacity = '1';
-                    iframe.style.zIndex = '1'
-                }
-            });
-        });
-
-        iframe.addEventListener('mouseleave', function() {
-            document.querySelectorAll('iframe').forEach(function(otherIframe) {
-                otherIframe.style.opacity = '1';
-            });
-        });
-    });
 
 
 class Artist {
@@ -65,12 +45,10 @@ console.log(artists);
 
 let top_cont = document.querySelector('#arrayTop_artists');
 
-for(let i = 0; i < 3; i++) {
+for(let i = 0; i < 3; i++) { // aggiungi 3 nella sezione home top 3
     addArtist(artists[i], top_cont);
 }
-
-
-artists.forEach(artist => {
+artists.forEach(artist => { // aggiungi tutti nella sezione all artists
     addArtist(artist, AllArtists);
 });
 

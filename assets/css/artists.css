@@ -1,0 +1,45 @@
+/* artits ---------*/
+#artists_container {
+    height: auto;
+    border: solid red 2px;
+}
+
+.artists_container {
+    display: flex;
+    flex-direction: column;
+    /* border: solid red 2px; */
+    
+    position: relative;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+.artist {
+    /* border: solid rgba(168, 168, 168, 0.418) 2px;
+    box-shadow: 2px 2px 20px #0000004b; */
+    position: relative;
+    /* margin-top: 100px; */
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+    /* border: solid red 2px; */
+}
+    .artist img {
+        width: 200px;
+        border-radius: 10%;
+        transition: all .3s cubic-bezier(.215, .61, .355, 1);
+    }
+    .artist h3 {
+        margin-top: 10px;
+    }
+
+
+
+.artist img:hover {
+    scale: 1.1;
+    border-radius: 25%;
+    transition: all .3s cubic-bezier(.215, .61, .355, 1);
+}
+

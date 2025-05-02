@@ -1,3 +1,6 @@
 #prima_section {
     height: 100vh;
 }
+#prima_section img {
+    width: 50%;
+}
