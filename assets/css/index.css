@@ -22,7 +22,7 @@ h1:hover .CircleMouse {
 } 
 
 
-h1, a, iframe {
+h1, a, iframe, img {
     z-index: 1;
     position: relative;
 }
