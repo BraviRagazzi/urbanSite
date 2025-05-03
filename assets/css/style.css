@@ -31,11 +31,12 @@ section {
 }
 
 .section-white {
-    height: 100vh;
+    height: 100%;
     background-color: var(--white);
 }
 
 .section-black {
+    height: 100%;
     background-color: var(--black);
 }
 
@@ -94,6 +95,9 @@ a:hover {
 
 
 /* GENERAL -------------- */
+    #more {
+        height: 800px;
+    }
     /* menu */
     #hamburger_menu{
         /* border: solid red 2px; */
@@ -103,7 +107,6 @@ a:hover {
         width: 90px;
         height: 30px;
 
-        cursor: pointer;
 
         z-index: 2;
     }
