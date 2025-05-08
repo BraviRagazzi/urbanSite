@@ -1,9 +1,17 @@
-#prima_section {
+#index #prima_section {
     height: 100vh;
 }
-#prima_section img {
+#index #prima_section img {
     width: 50%;
 }
+
+#prima_section {
+    height: 10vh;
+}
+#prima_section img {
+    width: 15%;
+}
+
 
 .CircleMouse {
     position: absolute;
@@ -34,6 +42,6 @@ h1, a, iframe, img {
 }
 
 * {
-    cursor: none;
+    cursor: default;
     scroll-behavior: smooth;
 }

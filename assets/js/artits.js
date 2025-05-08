@@ -43,17 +43,18 @@ console.log(artists);
 
 
 
-let top_cont = document.querySelector('#arrayTop_artists');
+// aggiungi gli artisti nelle sezioni
+let topArtist_cont = document.querySelector('#arrayTop_artists');
+let allArtists_cont = document.querySelector('#ciao');
 
 for(let i = 0; i < 3; i++) { // aggiungi 3 nella sezione home top 3
-    addArtist(artists[i], top_cont);
+    addArtist(artists[i], topArtist_cont);
 }
-artists.forEach(artist => { // aggiungi tutti nella sezione all artists
-    addArtist(artist, AllArtists);
-});
 
 
 
+
+// funzione per aggiungere gli artisti
 function addArtist(artist, obj) {
     const artistDiv = document.createElement('div')
     artistDiv.classList.add('artist');
