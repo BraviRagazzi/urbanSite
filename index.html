@@ -100,12 +100,12 @@
 
     <div class="footer_menu">
       <div class="menu_foo">
-        <a href="#home"><h1>Home</h1></a>
-        <a href="#sound"><h1>Playlists</h1></a>
-        <a><h1>All Artists</h1></a>
-        <a href="about.html"><h1>About</h1></a>
-        <a href="team.html"><h1>Team</h1></a>
-        <a href="#footer"><h1>Contacts</h1></a>
+        <a id="m_home" href="#home"><h1>Home</h1></a>
+        <a id="m_playlist" href="#sound"><h1>Playlists</h1></a>
+        <a id="m_artists"><h1>All Artists</h1></a>
+        <a id="m_about" href="about.html"><h1>About</h1></a>
+        <a id="m_team" href="team.html"><h1>Team</h1></a>
+        <a id="m_contact" href="#footer"><h1>Contacts</h1></a>
       </div>
     </div>
     
@@ -114,6 +114,7 @@
     </div>
     
     <script>
+
       function addBars() {
         const waveContainer = document.getElementById('wave-container');
         waveContainer.innerHTML = ''; // Rimuoviamo tutti i div esistenti

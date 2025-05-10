@@ -28,17 +28,17 @@ hamburger_menu.addEventListener('click', function() {
 
 
 
-// quando clicchi un opzione del menu, chiudi il menu
+// Quando clicchi un'opzione del menu, chiudi il menu
 let menu_items = [
     document.getElementById('home'),
+    document.getElementById('playlists'),
     document.getElementById('artists'),
     document.getElementById('about'),
     document.getElementById('contact')
 ];
 
-for(let i = 0; i < menu_items.length; i++) {
+for (let i = 0; i < menu_items.length; i++) {
     menu_items[i].addEventListener('click', function() {
         menu.classList.toggle('menu_close');
     });
 }
-
