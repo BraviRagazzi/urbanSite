@@ -1,31 +1,34 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
+  <!-- paperella -->
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Urban NC</title>
   <!-- Link al file CSS esterno -->
-  <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/menu.css">
+  <link rel="stylesheet" href="assets/css/artists.css">
+  <link rel="stylesheet" href="assets/css/songs.css">
+  <link rel="stylesheet" href="assets/css/index.css">
+  <link rel="stylesheet" href="assets/css/style.css">
 
   <!-- Link font e icone -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <link rel="icon" href="assets/image/Logo%20png/3000%20x%203000/2white.png">
 </head>
 
-<body>
-
-
+<body id="index">
   <section id="menu" class="menu_close">
     <div class="menu_content">
-      <a id="home" href="#home"><h1>Home</h1></a>
-      <a id="playlists" href="#sound"><h1>Playlists</h1></a>
-      <a id="artists"><h1>All Artists</h1></a>
+      <a id="home" href=""><h1>Home</h1></a>
+      <a id="artists" href="#top_artists"><h1>Top artists</h1></a>
+      <a id="playlists" href="#playlist"><h1>Playlists</h1></a>
+      <a id="playlists" href="podcast.html"><h1 style="color: rgb(184, 171, 116);">Urban on the mic</h1></a>
       <a id="about" href="about.html"><h1>About</h1></a>
       <a id="team" href="team.html"><h1>Team</h1></a>
-      <a id="Contacts" href="#footer"><h1>Contacts</h1></a>
+      <a id="contact" href="#footer"><h1>Contacts</h1></a>
     </div>
-
   </section>
   
 
@@ -41,34 +44,30 @@
     <img src="assets/image/Logo png/3000 x 3000/2.23white.png" alt="Urban Logo">
   </header>
 
+<!-- __________ fine-->
+
+
+
+
   <section class="section-white" id="top_artists">
     <div class="title">
       <h2>Top 3 Artists</h2>
     </div>
 
-    <div class="artists_container" id="top_artists">
-      <div class="artist">
-        <img src="assets/image/Artists/Walidone.png" alt="Artist 1">
-        <h3>Walidone 1</h3>
-      </div>
-      <div class="artist">
-        <img src="assets/image/Artists/Walidone.png" alt="Artist 2">
-        <h3>Walidone 2</h3>
-      </div>
-      <div class="artist">
-        <img src="assets/image/Artists/Walidone.png" alt="Artist 2">
-        <h3>Walidone 3</h3>
-      </div>
-
-
+    <div id="arrayTop_artists" style="margin-top: 100px;">
+      <!-- script javascript artists.js -->
     </div>
+
+    <a href="artists.html"><h1 id="more_artists" class="more_cont">
+      More Artists...
+    </h1></a>
     
 
   </section>
 
-  <section class="section-black" id="sound">
+  <section class="section-black" id="playlist">
     <div class="title">
-      <h2>Urban Sound</h2>
+      <h2>Sound of the street</h2>
     </div>
 
     <!-- per fare gli iframe neri basta mattere &theme=0 sul link 
@@ -77,21 +76,23 @@
 
       a https://open.spotify.com/embed/track/0P8IGBXiJcvmOAYawxqlQ4?utm_source=generator&theme=0
     -->
-    <div class="demo_songs">
-      <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0P8IGBXiJcvmOAYawxqlQ4?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-
-      <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1AGIH3dDa1V60oNuS5CVWK?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-
-      <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/7HcjwOy8kj1d6KSYXcqzt9?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    <div class="demo_songs" id="demo_songs">
+      <!-- Script songs.js -->
     </div>
     
-      <a href=""><h1 id="more_songs" class="more_cont">
-        More Songs...
-      </h1></a>
+    <a href="songs.html"><h1 id="more_songs" class="more_cont">
+      More Songs...
+    </h1></a>
 
+    <h1 id="ciao"></h1>
 
   </section>
 
+
+
+
+
+  <!-- ______________ inizio -->
 
   <section class="section-white" id="more">
     <div class="title">
@@ -100,12 +101,21 @@
 
     <div class="footer_menu">
       <div class="menu_foo">
+<<<<<<< HEAD
         <a id="m_home" href="#home"><h1>Home</h1></a>
         <a id="m_playlist" href="#sound"><h1>Playlists</h1></a>
         <a id="m_artists"><h1>All Artists</h1></a>
         <a id="m_about" href="about.html"><h1>About</h1></a>
         <a id="m_team" href="team.html"><h1>Team</h1></a>
         <a id="m_contact" href="#footer"><h1>Contacts</h1></a>
+=======
+      <a id="home" href=""><h1>Home</h1></a>
+      <a id="artists" href="#top_artists"><h1>Top artists</h1></a>
+      <a id="playlists" href="#playlist"><h1>Playlists</h1></a>
+      <a id="about" href="about.html"><h1>About</h1></a>
+      <a id="team" href="team.html"><h1>Team</h1></a>
+      <a id="contact" href="#footer"><h1>Contacts</h1></a>
+>>>>>>> bd836a51835aded4ea2b923335882ab0312d7450
       </div>
     </div>
     
@@ -145,14 +155,12 @@
 
   <footer id="footer">
     <div class="socials">
-      <a href="https://open.spotify.com/user/3175mmywz3q7ud7ziude74tzo2oa?si=6b89d9ea4e094dc5">Spotify</a>
-      <a href="https://www.instagram.com/urban_nc/">Instagram</a>
-      <a>You tube</a>
-      <a>Soundcload</a>
-
+      <a target="_blank" href="https://open.spotify.com/user/3175mmywz3q7ud7ziude74tzo2oa?si=6b89d9ea4e094dc5" >Spotify</a>
+      <a target="_blank" href="https://www.instagram.com/urban_nc/">Instagram</a>
+      <a target="_blank">You tube</a>
+      <a target="_blank">Soundcload</a>
     </div>
     
-
     <img src="assets/image/Logo png/3000 x 3000/2.23white - 2.png" alt="">
   </footer>
 
@@ -160,5 +168,7 @@
 
 <script src="assets/js/menu.js"></script>
 <script src="assets/js/artits.js"></script>
+<script src="assets/js/index.js"></script>
+<script src="assets/js/songs.js"></script>
 
 </html>

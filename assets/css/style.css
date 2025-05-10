@@ -20,7 +20,7 @@
 body {
     background-color: var(--white);
     margin: 0;
-    height: 200vh;
+    height: 100%;
 
     overflow-x: hidden;
     scroll-behavior: smooth;
@@ -31,12 +31,12 @@ section {
 }
 
 .section-white {
-    height: 100vh;
+    height: 100%;
     background-color: var(--white);
 }
 
 .section-black {
-    height: 100vh;
+    height: 100%;
     background-color: var(--black);
 }
 
@@ -48,6 +48,7 @@ a:hover {
 * {
     font-family: 'InriaSans', sans-serif;
 }
+
 
 
 /* Stile per l'intera scrollbar */
@@ -72,9 +73,11 @@ a:hover {
 ::-webkit-scrollbar-thumb:hover {
     background: #858585; /* Colore del thumb quando viene hoverato */
 }
-
-
-
+    
+/* MOUSE */
+.cursor_circle {
+    cursor: none;
+}
 
 
 
@@ -92,6 +95,9 @@ a:hover {
 
 
 /* GENERAL -------------- */
+    #more {
+        height: 800px;
+    }
     /* menu */
     #hamburger_menu{
         /* border: solid red 2px; */
@@ -101,7 +107,6 @@ a:hover {
         width: 90px;
         height: 30px;
 
-        cursor: pointer;
 
         z-index: 2;
     }
@@ -116,7 +121,7 @@ a:hover {
         z-index: 2;
     }
 
-    /* title */
+    /* titolo delle sezioni */
     .title {
         position: relative;
         top: 60px;
@@ -149,6 +154,7 @@ header {
 
 header img {
     width: 40vw;
+
 }
 
 
@@ -157,80 +163,8 @@ header img {
 
 
 
-/* artits ---------*/
-#top_artists {
-    height: auto;
-}
-
-.artists_container {
-    display: flex;
-    flex-direction: column;
-    /* border: solid red 2px; */
-    
-    position: relative;
-    margin-top: 100px;
-    margin-bottom: 30px;
-}
-.artist {
-    /* border: solid rgba(168, 168, 168, 0.418) 2px;
-    box-shadow: 2px 2px 20px #0000004b; */
-    position: relative;
-    /* margin-top: 100px; */
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: auto;
-    /* border: solid red 2px; */
-}
-    .artist img {
-        width: 200px;
-    }
-    .artist h3 {
-        margin-top: 10px;
-    }
 
 
-/* Sound ----------*/
-#sound {
-    height: auto;
-}
-#sound .demo_songs { 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    height: 80%;
-    /* border: solid red 2px; */
-
-    position: relative;
-    margin-top: 100px;
-}
-
-#sound .demo_songs iframe {
-    width: 20%;
-    min-width: 300px;
-    margin: 10px;
-    transition: all .5s cubic-bezier(.215, .61, .355, 1);
-}
-#sound .demo_songs iframe:hover {
-    scale: 1.1;
-    width: 35%;
-    transition: all .5s cubic-bezier(.215, .61, .355, 1);
-}
-
-
-#sound a h1 {
-    width: 100%;
-    height: 50px;
-    margin: 10px;
-
-    display: flex;
-    justify-content: center;
-
-    /* border: solid red 2px; */
-}
 
 
 /* Footer ------------*/
@@ -296,6 +230,7 @@ header img {
     a { text-decoration: none; color: var(--white); mix-blend-mode: difference;}
     .menu_foo h1 {
         margin: 10px;
+        text-align: center;
     }
 
 

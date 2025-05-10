@@ -4,14 +4,18 @@ let text = document.getElementById('menu_text');
 
 let menu = document.getElementById('menu');
 
-// seconda opzione  -> testo
-hamburger_menu.addEventListener('click', function() {
+function closeMenu() {
+    console.log('closeMenu');
     hamburger_menu.classList.toggle('menu_text_open');
 
     if (hamburger_menu.classList.contains('menu_text_open')) {
         text.textContent = 'close.';
         // togliere lo scroll
         document.body.style.overflow = 'hidden';
+
+
+        // quando apre il menu, cambia il mouse
+        document.body.classList.add('circle_mouse');
     }
     else {
         text.textContent = 'menu.';
@@ -22,8 +26,14 @@ hamburger_menu.addEventListener('click', function() {
 
     menu.classList.toggle('menu_open');
     menu.classList.toggle('menu_close');
-        
 
+
+}
+
+
+// seconda opzione  -> testo
+hamburger_menu.addEventListener('click', function() {
+    closeMenu();
 });
 
 
@@ -34,11 +44,18 @@ let menu_items = [
     document.getElementById('playlists'),
     document.getElementById('artists'),
     document.getElementById('about'),
+    document.getElementById('team'),
     document.getElementById('contact')
 ];
 
 for (let i = 0; i < menu_items.length; i++) {
     menu_items[i].addEventListener('click', function() {
-        menu.classList.toggle('menu_close');
+        closeMenu();
     });
 }
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> bd836a51835aded4ea2b923335882ab0312d7450

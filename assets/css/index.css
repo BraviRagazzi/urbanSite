@@ -1,0 +1,47 @@
+#index #prima_section {
+    height: 100vh;
+}
+#index #prima_section img {
+    width: 50%;
+}
+
+#prima_section {
+    height: 10vh;
+}
+#prima_section img {
+    width: 15%;
+}
+
+
+.CircleMouse {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+
+    border-radius: 50%;
+    z-index: 0;
+
+    background-color: white;
+    mix-blend-mode: difference;
+}
+a:hover .CircleMouse,
+h1:hover .CircleMouse {
+    width: 10px;
+} 
+
+
+h1, a, iframe, img {
+    z-index: 1;
+    position: relative;
+}
+.section-white {
+    z-index: -1;
+}
+.section-black {
+    z-index: -1;
+}
+
+* {
+    cursor: default;
+    scroll-behavior: smooth;
+}
