@@ -111,6 +111,11 @@ a:hover {
         z-index: 2;
     }
 
+    #hamburger_menu:hover {
+        cursor: pointer;
+        transition: all 1s cubic-bezier(.215, .61, .355, 1);
+    }
+
     #menu_text {
         mix-blend-mode: difference;
         color: var(--white);

@@ -53,9 +53,3 @@ for (let i = 0; i < menu_items.length; i++) {
         closeMenu();
     });
 }
-<<<<<<< HEAD
-=======
-
-
-
->>>>>>> bd836a51835aded4ea2b923335882ab0312d7450
