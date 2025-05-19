@@ -13,9 +13,6 @@ function closeMenu() {
         // togliere lo scroll
         document.body.style.overflow = 'hidden';
 
-
-        // quando apre il menu, cambia il mouse
-        document.body.classList.add('circle_mouse');
     }
     else {
         text.textContent = 'menu.';
@@ -53,9 +50,3 @@ for (let i = 0; i < menu_items.length; i++) {
         closeMenu();
     });
 }
-<<<<<<< HEAD
-=======
-
-
-
->>>>>>> bd836a51835aded4ea2b923335882ab0312d7450

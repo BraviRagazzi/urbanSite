@@ -46,8 +46,6 @@ function addFrame(element, divdemo) {
 }
 
 
-
-
 // SONGS
     // Quando passi sopra un iframe, fai azioni tutti gli altri iframe
     document.querySelectorAll('iframe').forEach(function(iframe) {
