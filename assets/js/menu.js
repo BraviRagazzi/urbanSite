@@ -49,4 +49,8 @@ for (let i = 0; i < menu_items.length; i++) {
     menu_items[i].addEventListener('click', function() {
         closeMenu();
     });
+
 }
+
+
+
