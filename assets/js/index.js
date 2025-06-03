@@ -3,7 +3,7 @@ const circle = document.createElement('div');
     circle.classList.add('CircleMouse');
     circle.id = 'CircleMouse';
 
-document.body.appendChild(circle);
+// document.body.appendChild(circle);
 
 
 
