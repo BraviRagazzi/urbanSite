@@ -5,18 +5,7 @@ let iframeArray = []; // array per iframe
 iframeArray.push("https://open.spotify.com/embed/track/0P8IGBXiJcvmOAYawxqlQ4?utm_source=generator");
 iframeArray.push("https://open.spotify.com/embed/track/1AGIH3dDa1V60oNuS5CVWK?utm_source=generator");
 iframeArray.push("https://open.spotify.com/embed/track/7HcjwOy8kj1d6KSYXcqzt9?utm_source=generator");
-iframeArray.push("https://open.spotify.com/embed/track/0P8IGBXiJcvmOAYawxqlQ4?utm_source=generator");
-iframeArray.push("https://open.spotify.com/embed/track/1AGIH3dDa1V60oNuS5CVWK?utm_source=generator");
-iframeArray.push("https://open.spotify.com/embed/track/7HcjwOy8kj1d6KSYXcqzt9?utm_source=generator");
-iframeArray.push("https://open.spotify.com/embed/track/0P8IGBXiJcvmOAYawxqlQ4?utm_source=generator");
-iframeArray.push("https://open.spotify.com/embed/track/1AGIH3dDa1V60oNuS5CVWK?utm_source=generator");
-iframeArray.push("https://open.spotify.com/embed/track/7HcjwOy8kj1d6KSYXcqzt9?utm_source=generator");
-iframeArray.push("https://open.spotify.com/embed/track/0P8IGBXiJcvmOAYawxqlQ4?utm_source=generator");
-iframeArray.push("https://open.spotify.com/embed/track/1AGIH3dDa1V60oNuS5CVWK?utm_source=generator");
-iframeArray.push("https://open.spotify.com/embed/track/7HcjwOy8kj1d6KSYXcqzt9?utm_source=generator");
-iframeArray.push("https://open.spotify.com/embed/track/0P8IGBXiJcvmOAYawxqlQ4?utm_source=generator");
-iframeArray.push("https://open.spotify.com/embed/track/1AGIH3dDa1V60oNuS5CVWK?utm_source=generator");
-iframeArray.push("https://open.spotify.com/embed/track/7HcjwOy8kj1d6KSYXcqzt9?utm_source=generator");
+
 
 iframeArray.forEach(element => {
     addFrame(element, divAll);
@@ -40,8 +29,6 @@ function addFrame(element, divdemo) {
 
     if (divdemo) {
         divdemo.appendChild(iframe);
-    } else {
-        console.error("Element with id 'demo_songs' not found.");
     }
 }
 

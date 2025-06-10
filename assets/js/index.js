@@ -16,9 +16,9 @@ document.addEventListener('mousemove', (event) => {
 
 
 // loading
-let loading = document.getElementById('loading');
-window.addEventListener('load' , () => {
-    loading.style.display = 'block';
-})
+// let loading = document.getElementById('loading');
+// window.addEventListener('load' , () => {
+//     loading.style.display = 'block';
+// })
 
-loading.style.display = 'none';
+// loading.style.display = 'none';

@@ -3,11 +3,16 @@ document.addEventListener('DOMContentLoaded', () => {
     const artistArray = Array.from(artistDivs);
     // Ora artistArray contiene tutti i div con la classe "artist" all'interno della sezione "arrayTop_artists"
     console.log(artistArray);
-    for(let i = 0; i < artistArray.length; i++) {
-        if(i % 2 === 1) { // se è dispari a destra (inizia da 0)
-            artistArray[i].classList.add('right');
+
+
+    if (topArtist_cont) {
+        for(let i = 0; i < artistArray.length; i++) {
+            if(i % 2 === 1) { // se è dispari a destra (inizia da 0)
+                artistArray[i].classList.add('right');
+            }
         }
     }
+   
 });
 
 
@@ -39,19 +44,33 @@ artists.push(new Artist("Walidone", "assets/image/Artists/Walidone.png"));
 artists.push(new Artist("Walidone", "assets/image/Artists/Walidone.png"));
 artists.push(new Artist("Walidone", "assets/image/Artists/Walidone.png"));
 artists.push(new Artist("Walidone", "assets/image/Artists/Walidone.png"));
+artists.push(new Artist("Walidone", "assets/image/Artists/Walidone.png"));
+artists.push(new Artist("Walidone", "assets/image/Artists/Walidone.png"));
+artists.push(new Artist("Walidone", "assets/image/Artists/Walidone.png"));
+artists.push(new Artist("Walidone", "assets/image/Artists/Walidone.png"));
+artists.push(new Artist("Walidone", "assets/image/Artists/Walidone.png"));
+artists.push(new Artist("Walidone", "assets/image/Artists/Walidone.png"));
+artists.push(new Artist("Walidone", "assets/image/Artists/Walidone.png"));
+artists.push(new Artist("Walidone", "assets/image/Artists/Walidone.png"));
+artists.push(new Artist("Walidone", "assets/image/Artists/Walidone.png"));
+
 console.log(artists);
 
 
 
 // aggiungi gli artisti nelle sezioni
 let topArtist_cont = document.querySelector('#arrayTop_artists');
-let allArtists_cont = document.querySelector('#ciao');
+let allArtists = document.querySelector('#Array_artists');
 
-for(let i = 0; i < 3; i++) { // aggiungi 3 nella sezione home top 3
-    addArtist(artists[i], topArtist_cont);
+if (topArtist_cont) {
+    for(let i = 0; i < 3; i++) { // aggiungi 3 nella sezione home top 3
+        addArtist(artists[i], topArtist_cont);
+    }
+} else if (allArtists) {
+    artists.forEach(element => {
+        addArtist(element, allArtists);
+    });
 }
-
-
 
 
 // funzione per aggiungere gli artisti
@@ -72,5 +91,7 @@ function addArtist(artist, obj) {
     obj.append(artistDiv);
  
 }
+
+
 
 

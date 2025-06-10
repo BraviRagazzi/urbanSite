@@ -8,8 +8,6 @@
     --right_menu_hamburger: 15px; /* distanza dal bordo destro */
 }
 
-@font-face { font-family: 'InriaSans'; src: url('assets/fonts/InriaSans-Light.ttf') format('truetype'); font-weight: normal; font-style: normal; }
-
 
 * {
     margin: 0;

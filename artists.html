@@ -6,125 +6,126 @@
   <title>Urban NC</title>
   <!-- Link al file CSS esterno -->
   <link rel="stylesheet" href="assets/css/menu.css">
-  <link rel="stylesheet" href="assets/css/artists.css">
-  <link rel="stylesheet" href="assets/css/songs.css">
-  <link rel="stylesheet" href="assets/css/index.css">
   <link rel="stylesheet" href="assets/css/style.css">
-
+  <link rel="stylesheet" href="assets/css/songs.css">
+  <link rel="stylesheet" href="assets/css/artists.css">
 
   <!-- Link font e icone -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <link rel="icon" href="assets/image/Logo%20png/3000%20x%203000/2white.png">
 </head>
 
-<body>
-    <section id="menu" class="menu_close">
-        <div class="menu_content">
-            <a id="home" href="index.html"><h1>Home</h1></a>
-            <a id="artists" href="#top_artists"><h1>Top artists</h1></a>
-            <a id="playlists" href="#playlist"><h1>Playlists</h1></a>
-            <a id="playlists" href="podcast.html"><h1 style="color: rgb(184, 171, 116);">Urban on the mic</h1></a>
-            <a id="about" href="about.html"><h1>About</h1></a>
-            <a id="team" href="team.html"><h1>Team</h1></a>
-            <a id="contact" href="#footer"><h1>Contacts</h1></a>
-        </div>
-    </section>
-        
+<body class="">
+  <section id="menu" class="menu_close">
+    <div class="menu_content">
+      <a id="home" href="index.html"><h1>Home</h1></a>
+      <a id="artists" href="#top_artists"><h1>Top artists</h1></a>
+      <a id="playlists" href="#playlist"><h1>Playlists</h1></a>
+      <a id="playlists" href="podcast.html"><h1 style="color: rgb(184, 171, 116);">Urban on the mic</h1></a>
+      <a id="about" href="about.html"><h1>About</h1></a>
+      <a id="team" href="team.html"><h1>Team</h1></a>
+      <a id="contact" href="#footer"><h1>Contacts</h1></a>
+    </div>
+  </section>
+  
 
-    <section id="home">
+  <section id="home">
     <!-- <img src="assets/image/logoWhite.svg" alt="Logo UrbanSite" class="logo"> -->
 
     <!-- tre span per il menu -->
     <h1 id="menu_text" class="">menu.</h1>
     <span id="hamburger_menu"></span>
-    </section>
+  </section>
 
-    <header class="section-black" id="prima_section">
+  <header class="section-black" id="prima_section">
     <img src="assets/image/Logo png/3000 x 3000/2.23white.png" alt="Urban Logo">
-    </header>
-    
-    <!-- __________ fine-->
-    
-    
-    
-    <section class="section-black" id="more_playlist">
-        <div class="title">
-            <h2>Urban artits</h2>
-        </div>
+  </header>
 
-        <div class="artists" id="ciao">
-            <!-- Codice da script artists.js -->
-        </div>
+  <!-- __________ fine-->
 
-    </section>
-    
-    
-    
-    <!-- ________ inizio -->
-    <section class="section-white" id="more">
+
+
+  <section class="section-black" id="more_playlist">
     <div class="title">
-        <h2>More </h2>
+      <h2>Urban Artists</h2>
+    </div>
+
+    <div class="demo_songs center" id="Array_artists">
+      <!-- Codice da script songs.js -->
+    </div>
+
+
+  </section>
+
+
+
+  <!-- ________ inizio -->
+  <section class="section-white" id="more">
+    <div class="title">
+      <h2>More </h2>
     </div>
 
     <div class="footer_menu">
-        <div class="menu_foo">
+      <div class="menu_foo">
         <a id="home" href="index.html"><h1>Home</h1></a>
         <a id="artists" href="#top_artists"><h1>Top artists</h1></a>
         <a id="playlists" href="#playlist"><h1>Playlists</h1></a>
         <a id="about" href="about.html"><h1>About</h1></a>
         <a id="team" href="team.html"><h1>Team</h1></a>
         <a id="contact" href="#footer"><h1>Contacts</h1></a>
-        </div>
+      </div>
     </div>
     
     <div id="wave-container">
-        <!-- div con la classe "bar" da javascript -->
+      <!-- div con la classe "bar" da javascript -->
     </div>
     
     <script>
-        function addBars() {
-            const waveContainer = document.getElementById('wave-container');
-            waveContainer.innerHTML = ''; // Rimuoviamo tutti i div esistenti
-        
-            const screenWidth = window.innerWidth;
-            let numberOfBars;
-            
-            // ridimensionamento in base alla larghezza dello schermo
-            numberOfBars = screenWidth/20;
+      function addBars() {
+          const waveContainer = document.getElementById('wave-container');
+          waveContainer.innerHTML = ''; // Rimuoviamo tutti i div esistenti
+      
+          const screenWidth = window.innerWidth;
+          let numberOfBars;
+          
+          // ridimensionamento in base alla larghezza dello schermo
+          numberOfBars = screenWidth/20;
 
-            
+          
 
-            // animazione movimento barre
-            for (let i = 0; i < numberOfBars; i++) {
-            const bar = document.createElement('div');
-            bar.classList.add('bar');
-            const randomDuration = Math.random() * 3 + 2; // Durata casuale tra 2s e 5s
-            bar.style.animationDuration = `${randomDuration}s`;
-            waveContainer.appendChild(bar);
-            }
-        }
-        
-        window.addEventListener('resize', addBars); // Aggiorna le barre al ridimensionamento della finestra
-        window.addEventListener('load', addBars); // Aggiorna le barre al caricamento della pagina
-
+          // animazione movimento barre
+          for (let i = 0; i < numberOfBars; i++) {
+          const bar = document.createElement('div');
+          bar.classList.add('bar');
+          const randomDuration = Math.random() * 3 + 2; // Durata casuale tra 2s e 5s
+          bar.style.animationDuration = `${randomDuration}s`;
+          waveContainer.appendChild(bar);
+          }
+      }
+      
+      window.addEventListener('resize', addBars); // Aggiorna le barre al ridimensionamento della finestra
+      window.addEventListener('load', addBars); // Aggiorna le barre al caricamento della pagina
     </script>
 
-    </section>
+  </section>
 
-    <footer id="footer">
-        <div class="socials">
-        <a target="_blank" href="https://open.spotify.com/user/3175mmywz3q7ud7ziude74tzo2oa?si=6b89d9ea4e094dc5" >Spotify</a>
-        <a target="_blank" href="https://www.instagram.com/urban_nc/">Instagram</a>
-        <a target="_blank">You tube</a>
-        <a target="_blank">Soundcload</a>
-        </div>
-        
-        <img src="assets/image/Logo png/3000 x 3000/2.23white - 2.png" alt="">
-    </footer>
+  <footer id="footer">
+      <div class="socials">
+      <a target="_blank" href="https://open.spotify.com/user/3175mmywz3q7ud7ziude74tzo2oa?si=6b89d9ea4e094dc5" >Spotify</a>
+      <a target="_blank" href="https://www.instagram.com/urban_nc/">Instagram</a>
+      <a target="_blank">You tube</a>
+      <a target="_blank">Soundcload</a>
+      </div>
+      
+      <img src="assets/image/Logo png/3000 x 3000/2.23white - 2.png" alt="">
+  </footer>
 </body>
 
 <script src="assets/js/menu.js"></script>
 <script src="assets/js/artits.js"></script>
 <script src="assets/js/index.js"></script>
+<script src="assets/js/songs.js"></script>
+
+
 
 </html>

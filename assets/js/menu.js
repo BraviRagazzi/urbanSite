@@ -27,6 +27,11 @@
 //     `;
 // }
 
+
+
+
+
+
 let hamburger_menu = document.getElementById('hamburger_menu');
 let text = document.getElementById('menu_text');
 
