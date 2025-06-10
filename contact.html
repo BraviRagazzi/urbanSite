@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="assets/css/songs.css">
   <link rel="stylesheet" href="assets/css/index.css">
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/contact.css">
 
   <!-- Link font e icone -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -29,7 +30,7 @@
       <a id="playlists" href="podcast.html"><h1 style="color: rgb(184, 171, 116);">Urban on the mic</h1></a>
       <a id="about" href="about.html"><h1>About</h1></a>
       <a id="team" href="team.html"><h1>Team</h1></a>
-      <a id="contact" href="contact.html"><h1>Contact</h1></a>
+      <a id="contact" href="contact.html"><h1>Contacts</h1></a>
     </div>
   </section> 
   
@@ -47,51 +48,43 @@
 
 <!-- __________ fine-->
 
+    <section id="contact" class="center">
+        <form action="" class="center">
+            <div class="cont">
+                <label for="nome">Nome: </label>
+                <input type="text" name="name" id="name" placeholder="Inserisci il tuo nome" required>
+            </div>
+            
+            <div class="cont">
+                <label for="cognome">Cognome: </label>
+                <input type="text" name="cognome" id="cognome" placeholder="Inserisci il tuo cognome" required>
+            </div>
 
+            <div class="cont">
+                <label for="cognome">Motivo: </label>
+                <input type="text" name="cognome" id="cognome" placeholder="Inserisci il tuo cognome" required>
+            </div>
+            
+            <div class="cont">
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email" placeholder="Inserisci la tua email" required>
+            </div>
 
+            <div class="cont">
+                <label for="messaggio">Messaggio: </label>
+                <textarea name="messaggio" id="messaggio" cols="30" rows="1" placeholder="Inserisci il tuo messaggio" required></textarea>
+            </div>
+            
+            <div class="cont">
+                <input style="cursor: pointer; min-height: fit-content;" type="radio" name="privacy" id="privacy" required>
+                <label for="">Accetto la <a onclick="openPrivacyPolicy()" >policy e privacy</a> del trattamento dei dati inseriti</label>
+            </div>
 
-  <section class="section-white" id="top_artists">
-    <div class="title">
-      <h2>Top 3 Artists</h2>
-    </div>
+            <button onclick="inviaForm()">Invia</button>
+        </form>
+    </section>
 
-    <div id="arrayTop_artists" style="margin-top: 100px;">
-      <!-- script javascript artists.js -->
-    </div>
-
-    <a href="artists.html"><h1 id="more_artists" class="more_cont">
-      More Artists...
-    </h1></a>
-    
-
-  </section>
-
-  <section class="section-black" id="playlist">
-    <div class="title">
-      <h2>Sound of the street</h2>
-    </div>
-
-    <!-- per fare gli iframe neri basta mattere &theme=0 sul link 
-      esempio:
-      da  https://open.spotify.com/embed/track/0P8IGBXiJcvmOAYawxqlQ4?utm_source=generator
-
-      a https://open.spotify.com/embed/track/0P8IGBXiJcvmOAYawxqlQ4?utm_source=generator&theme=0
-    -->
-    <div class="demo_songs" id="demo_songs">
-      <!-- Script songs.js -->
-    </div>
-    
-    <a href="songs.html"><h1 id="more_songs" class="more_cont">
-      More Songs...
-    </h1></a>
-
-  </section>
-
-
-
-
-
-  <!-- ______________ inizio -->
+ <!-- ______________ inizio -->
   
   <section class="section-white" id="more">
     <div class="title">
@@ -104,9 +97,9 @@
       <a id="home" href=""><h1>Home</h1></a>
       <a id="artists" href="#top_artists"><h1>Top artists</h1></a>
       <a id="playlists" href="#playlist"><h1>Playlists</h1></a>
-      <a id="about" href="coming.html"><h1>About</h1></a>
-      <a id="team" href="coming.html"><h1>Team</h1></a>
-      <a id="contact" href="contact.html"><h1>Contact</h1></a>
+      <a id="about" href="about.html"><h1>About</h1></a>
+      <a id="team" href="team.html"><h1>Team</h1></a>
+      <a id="contact" href="contact.html"><h1>Contacts</h1></a>
 
       </div>
     </div>

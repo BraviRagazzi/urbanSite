@@ -79,6 +79,9 @@ a:hover {
 .cursor_circle {
     cursor: none;
 }
+a:hover {
+    cursor: pointer;
+}
 
 
 
@@ -233,7 +236,7 @@ header img {
     }
 
 
-    a { text-decoration: none; color: var(--white); mix-blend-mode: difference;}
+    a { text-decoration: none; color: var(--white); mix-blend-mode: difference; cursor: pointer;}
     .menu_foo h1 {
         margin: 10px;
         text-align: center;

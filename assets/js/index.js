@@ -15,6 +15,34 @@ document.addEventListener('mousemove', (event) => {
 
 
 
+
+// creare la privacy policy 
+function openPrivacyPolicy() {
+
+    if (document.getElementById('privacypolicy')) {
+        console.log('Privacy Policy already exists');
+        return; // Exit if the privacy policy is already open
+    }
+    const privacyPolicy = document.createElement('div');
+
+    privacyPolicy.id = 'privacypolicy';
+
+    privacyPolicy.classList.add('privacy-policy');
+    privacyPolicy.innerHTML = `
+        <h2>Privacy Policy</h2>
+        <p>This is a sample privacy policy. Please read it carefully.</p>
+        <button id="closePrivacyPolicy">Close</button>
+    `;
+    document.body.appendChild(privacyPolicy);
+
+    document.getElementById('closePrivacyPolicy').addEventListener('click', () => {
+        document.body.removeChild(privacyPolicy);
+    });
+
+    console.log('Privacy Policy opened');
+}
+
+
 // loading
 // let loading = document.getElementById('loading');
 // window.addEventListener('load' , () => {
@@ -22,3 +50,8 @@ document.addEventListener('mousemove', (event) => {
 // })
 
 // loading.style.display = 'none';
+
+
+function inviaForm() {
+    
+}

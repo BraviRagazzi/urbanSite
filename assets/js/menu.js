@@ -8,7 +8,7 @@
 //             <a id="playlists" href="#playlist"><h1>Playlists</h1></a>
 //             <a id="about" href="about.html"><h1>About</h1></a>
 //             <a id="team" href="team.html"><h1>Team</h1></a>
-//             <a id="contact" href="#footer"><h1>Contacts</h1></a>
+//             <a id="contact" href="contact.html"><h1>Contact</h1></a>
 //             </div>
 //         </section>
         
@@ -26,10 +26,6 @@
 //         </header>
 //     `;
 // }
-
-
-
-
 
 
 let hamburger_menu = document.getElementById('hamburger_menu');
