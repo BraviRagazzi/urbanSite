@@ -12,13 +12,13 @@ form {
 }
 
 form label, form input, form textarea {
-    margin-top: 30px;
-
     resize: none;
     cursor: text;
     border-radius: 10px;
     padding: 10px;
     border: none;
+
+    margin-top: 30px;
 }
 
 
@@ -32,12 +32,15 @@ form input {
 
 form label {
     width: 50%;
+    margin-top: 10px;
     /* border: solid red 2px; */
 }
 form input, form textarea {
     border-bottom: solid 1px black;
     background-color: rgba(184, 184, 184, 0.081);
     color: rgb(0, 0, 0);
+
+    margin-bottom: 0px;
 }
 
 form button {
@@ -59,4 +62,19 @@ form button:hover {
     border: solid 1px black;
 
     transition: all .3s cubic-bezier(.215, .61, .355, 1);
+}
+
+
+input:checked {
+  accent-color: #000000; /* Funziona su browser moderni */
+}
+
+@media (max-width: 380px) {
+    form label, form input, form textarea {
+        margin-top: 0;
+    }
+
+    form input, form textarea {
+        margin-bottom: 30px;
+    }
 }

@@ -1,36 +1,5 @@
-// aggiunta dl menu
-// function addMenu() {
-//     return `
-//         <section id="menu" class="menu_close">
-//             <div class="menu_content">
-//             <a id="home" href="index.html"><h1>Home</h1></a>
-//             <a id="artists" href="#top_artists"><h1>Top artists</h1></a>
-//             <a id="playlists" href="#playlist"><h1>Playlists</h1></a>
-//             <a id="about" href="about.html"><h1>About</h1></a>
-//             <a id="team" href="team.html"><h1>Team</h1></a>
-//             <a id="contact" href="contact.html"><h1>Contact</h1></a>
-//             </div>
-//         </section>
-        
-
-//         <section id="home">
-//             <!-- <img src="assets/image/logoWhite.svg" alt="Logo UrbanSite" class="logo"> -->
-
-//             <!-- tre span per il menu -->
-//             <h1 id="menu_text" class="">menu.</h1>
-//             <span id="hamburger_menu"></span>
-//         </section>
-
-//         <header class="section-black" id="prima_section">
-//             <img src="assets/image/Logo png/3000 x 3000/2.23white.png" alt="Urban Logo">
-//         </header>
-//     `;
-// }
-
-
 let hamburger_menu = document.getElementById('hamburger_menu');
 let text = document.getElementById('menu_text');
-
 let menu = document.getElementById('menu');
 
 function closeMenu() {
@@ -39,47 +8,52 @@ function closeMenu() {
 
     if (hamburger_menu.classList.contains('menu_text_open')) {
         text.textContent = 'close.';
-        // togliere lo scroll
         document.body.style.overflow = 'hidden';
-
-    }
-    else {
+    } else {
         text.textContent = 'menu.';
-        // rimette lo scroll
         document.body.style.overflow = 'visible';
     }
 
-
     menu.classList.toggle('menu_open');
     menu.classList.toggle('menu_close');
-
-
 }
 
-
-// seconda opzione  -> testo
 hamburger_menu.addEventListener('click', function() {
     closeMenu();
 });
 
 
 
-// Quando clicchi un'opzione del menu, chiudi il menu
-let menu_items = [
-    document.getElementById('home'),
-    document.getElementById('playlists'),
-    document.getElementById('artists'),
-    document.getElementById('about'),
-    document.getElementById('team'),
-    document.getElementById('contact')
+// crea le voci di menu
+const aElement = [
+    { id: 'home', href: 'index.html', text: 'Home' },
+    { id: 'artists', href: 'index.html#top_artists', text: 'Top artists' },
+    { id: 'playlists', href: 'index.html#playlist', text: 'Playlists' },
+    { id: 'UrbanMic', href: 'podcast.html', text: 'Urban on the mic' },
+    { id: 'about', href: 'coming.html', text: 'About' },
+    { id: 'team', href: 'coming.html', text: 'Team' },
+    { id: 'contact', href: 'contact.html', text: 'Contact' }
 ];
 
-for (let i = 0; i < menu_items.length; i++) {
-    menu_items[i].addEventListener('click', function() {
-        closeMenu();
-    });
+let menu_content = document.createElement('div');
+menu_content.className = 'menu_content';
 
-}
+aElement.forEach(element => {
+    let a = document.createElement('a');
+    a.id = element.id;
+    a.href = element.href;
+    a.innerHTML = '<h1>' + element.text + '</h1>';
+    menu_content.appendChild(a);
+});
 
+menu.appendChild(menu_content);
 
-
+// aggiungi event listener alle voci di menu appena create
+aElement.forEach(element => {
+    let menuItem = document.getElementById(element.id);
+    if (menuItem) {
+        menuItem.addEventListener('click', function() {
+            closeMenu();
+        });
+    }
+});

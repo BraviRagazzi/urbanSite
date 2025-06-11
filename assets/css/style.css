@@ -17,7 +17,9 @@
     /* border: solid red 2px; */
     /* background-color: blue; */
 }
-
+* {
+  -webkit-tap-highlight-color: transparent;
+}
 body {
     background-color: var(--white);
     margin: 0;
@@ -107,9 +109,9 @@ a:hover {
         /* border: solid red 2px; */
         position: fixed;
         right: var(--right_menu_hamburger);
-        top: 15px;
-        width: 90px;
-        height: 30px;
+        top: 16px;
+        width: 120px;
+        height: 50px;
 
 
         z-index: 2;
@@ -150,6 +152,11 @@ a:hover {
         position: relative;
         margin-left: 50%;
         /* border: solid rgb(10, 10, 10) 2px; */
+    }
+
+
+    #UrbanMic {
+        color: rgb(184, 171, 116);
     }
 
 /* ------------------ */
