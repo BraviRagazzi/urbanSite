@@ -16,6 +16,7 @@
 
 #index #prima_section {
     height: 100vh;
+
 }
 #index #prima_section img {
     width: 50%;
@@ -29,57 +30,27 @@
 }
 
 
-.menu {
-    width: 100%;
-    height: 10vh;
+
+#top_artists {
+    /* border: solid red 2px; */
+    padding: 0px 50px;
+}
+#top_artists img {
+    width: 35%;
+    height: 35%;
+    min-width: 200px;
+    object-fit: cover;
+}
+
+@media (max-width: 502px) {
+    #top_artists img {
+        width: 100px;
+        height: 100px ;
+
+        min-width: fit-content;
+        object-fit: cover;
+    }
 }
 
 
 
-
-
-.CircleMouse {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-
-    border-radius: 50%;
-    z-index: 0;
-
-    background-color: white;
-    mix-blend-mode: difference;
-}
-a:hover .CircleMouse,
-h1:hover .CircleMouse {
-    width: 10px;
-} 
-
-
-h1, a, iframe, img {
-    z-index: 1;
-    position: relative;
-}
-.section-white {
-    z-index: -1;
-}
-.section-black {
-    z-index: -1;
-}
-
-* {
-    cursor: default;
-    scroll-behavior: smooth;
-}
-
-
-
-
-#privacypolicy {
-    position: fixed;
-    top: 0;
-    background-color: white;
-    border-radius: 10px;
-    padding: 20px;
-    z-index: 2;
-    border: solid 2px black;
-}

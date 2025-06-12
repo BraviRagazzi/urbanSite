@@ -14,8 +14,6 @@ document.addEventListener('mousemove', (event) => {
 })
 
 
-
-
 // creare la privacy policy 
 function openPrivacyPolicy() {
 
@@ -23,6 +21,7 @@ function openPrivacyPolicy() {
         console.log('Privacy Policy already exists');
         return; // Exit if the privacy policy is already open
     }
+
     const privacyPolicy = document.createElement('div');
 
     privacyPolicy.id = 'privacypolicy';
@@ -30,7 +29,11 @@ function openPrivacyPolicy() {
     privacyPolicy.classList.add('privacy-policy');
     privacyPolicy.innerHTML = `
         <h2>Privacy Policy</h2>
-        <p>This is a sample privacy policy. Please read it carefully.</p>
+        <p>- Dati inviati dall' utente <br> I Dati inviati dall' utente non verranno in nessun modo trattati o divulgati ma verranno soltanto inviati alla mail info@urban.it per informazioni o richieste dell' utente stesso.
+        <br>Questo garantisce una maggiore privacy per gli utenti e una maggiore riservatezza dei dati
+        
+        <br <br>
+        </p>
         <button id="closePrivacyPolicy">Close</button>
     `;
     document.body.appendChild(privacyPolicy);
@@ -44,14 +47,10 @@ function openPrivacyPolicy() {
 
 
 // loading
-let loading = document.getElementById('loading');
-window.addEventListener('load' , () => {
-    loading.style.display = 'block';
-})
+// let loading = document.getElementById('loading');
+// window.addEventListener('load' , () => {
+//     loading.style.display = 'block';
+// })
 
-loading.style.display = 'none';
+// loading.style.display = 'none';
 
-
-function inviaForm() {
-    
-}

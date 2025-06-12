@@ -9,6 +9,33 @@ form {
     flex-direction: column;
 
     margin: 70px 0px;
+
+    border: solid rgb(0, 0, 0) 2px;
+
+    width: 40%;
+    height: 600px;
+
+    border-radius: 20px;
+
+    min-width: 300px;
+    padding: 20px;
+}
+
+form .cont {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+}
+
+form .cont label {
+    /* border: solid red 2px; */
+    justify-content: flex-end;
+
+    min-width: 30%;
+    max-width: 30%;
+        text-align: end;
+
 }
 
 form label, form input, form textarea {
@@ -19,6 +46,8 @@ form label, form input, form textarea {
     border: none;
 
     margin-top: 30px;
+
+    /* border: solid red 2px; */
 }
 
 
@@ -32,7 +61,7 @@ form input {
 
 form label {
     width: 50%;
-    margin-top: 10px;
+    margin-top: 40px;
     /* border: solid red 2px; */
 }
 form input, form textarea {
@@ -76,5 +105,22 @@ input:checked {
 
     form input, form textarea {
         margin-bottom: 30px;
+    }
+
+    form {
+        height: fit-content;
+    }
+
+    form .cont {
+        flex-direction: column;
+
+        height: fit-content;
+        /* border: solid red 2px; */
+    }
+
+    form .cont label {
+        /* border: solid red 2px; */
+        text-align: start;
+
     }
 }
