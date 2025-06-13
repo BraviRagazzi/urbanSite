@@ -1,18 +1,28 @@
 const divDemo = document.querySelector('#demo_songs');
 const divAll = document.querySelector('#all_songs');
 
-let iframeArray = []; // array per iframe
-iframeArray.push("https://open.spotify.com/embed/track/0P8IGBXiJcvmOAYawxqlQ4?utm_source=generator");
-iframeArray.push("https://open.spotify.com/embed/track/1AGIH3dDa1V60oNuS5CVWK?utm_source=generator");
-iframeArray.push("https://open.spotify.com/embed/track/7HcjwOy8kj1d6KSYXcqzt9?utm_source=generator");
+let iframeArray = []; // array per iframe, basta incollare i link di condivisione
+iframeArray.push("https://open.spotify.com/intl-it/track/0P8IGBXiJcvmOAYawxqlQ4?si=d386d79963374829");
+iframeArray.push("https://open.spotify.com/intl-it/track/1AGIH3dDa1V60oNuS5CVWK?si=a9fbe98a499d4483");
+iframeArray.push("https://open.spotify.com/intl-it/track/260muV2XLIoeuJ5y8MJlAY?si=ffa7cc7014954f38");
+iframeArray.push("https://open.spotify.com/intl-it/track/2JmbJeo2fuK82bHzhbymi6?si=0b20639faea04e4f");
+
+
+function togliEccesso(link) {
+    str = link.replace('https://open.spotify.com/intl-it/track/', 'https://open.spotify.com/embed/track/');
+    str += '?utm_source=generator';
+    console.log(str);
+    return str;
+}
+
 
 
 iframeArray.forEach(element => {
-    addFrame(element, divAll);
+    addFrame(togliEccesso(element), divAll);
 });
 
 for(let i = 0; i < 3; i++) {
-    addFrame(iframeArray[i], divDemo);
+    addFrame(togliEccesso(iframeArray[i]), divDemo);
 }
 
 

@@ -38,21 +38,12 @@ class Artist {
 }
 
 let artists = [];
-artists.push(new Artist("Walidone", "assets/image/Artists/Walidone.png"));
-artists.push(new Artist("Walidone", "assets/image/Artists/Walidone.png"));
-artists.push(new Artist("Walidone", "assets/image/Artists/Walidone.png"));
-artists.push(new Artist("Walidone", "assets/image/Artists/Walidone.png"));
-artists.push(new Artist("Walidone", "assets/image/Artists/Walidone.png"));
-artists.push(new Artist("Walidone", "assets/image/Artists/Walidone.png"));
-artists.push(new Artist("Walidone", "assets/image/Artists/Walidone.png"));
-artists.push(new Artist("Walidone", "assets/image/Artists/Walidone.png"));
-artists.push(new Artist("Walidone", "assets/image/Artists/Walidone.png"));
-artists.push(new Artist("Walidone", "assets/image/Artists/Walidone.png"));
-artists.push(new Artist("Walidone", "assets/image/Artists/Walidone.png"));
-artists.push(new Artist("Walidone", "assets/image/Artists/Walidone.png"));
-artists.push(new Artist("Walidone", "assets/image/Artists/Walidone.png"));
-artists.push(new Artist("Walidone", "assets/image/Artists/Walidone.png"));
-artists.push(new Artist("Walidone", "assets/image/Artists/Walidone.png"));
+artists.push(new Artist("Alves", "assets/image/Artists/Alves.jpg"));
+artists.push(new Artist("Walido", "assets/image/Artists/Walidone.jpg"));
+artists.push(new Artist("Oh Chrisey", "assets/image/Artists/Oh Chrisey.jpg"));
+artists.push(new Artist("Gs Salamandra", "assets/image/Artists/Gs Salamandra.jpg"));
+
+
 
 console.log(artists);
 
@@ -78,6 +69,15 @@ function addArtist(artist, obj) {
     const artistDiv = document.createElement('div')
     artistDiv.classList.add('artist');
 
+    // card zoom
+        const contImg = document.createElement('div');
+        contImg.classList.add('cont_img');
+
+    artistDiv.append(contImg);
+
+
+
+
     const img = document.createElement('img');
     img.src = artist.getImgPath();
     img.alt = artist.getName();
@@ -85,7 +85,7 @@ function addArtist(artist, obj) {
     const h3 = document.createElement('h3')
     h3.innerHTML = artist.getName();
 
-    artistDiv.append(img);
+    contImg.append(img);
     artistDiv.append(h3);
 
     obj.append(artistDiv);

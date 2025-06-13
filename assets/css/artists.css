@@ -19,41 +19,77 @@
     display: flex;
     flex-wrap: wrap;
 
+    padding: 0 0 100px 0;
 }
-.artist {
-    /* border: solid rgba(168, 168, 168, 0.418) 2px;
-    box-shadow: 2px 2px 20px #0000004b; */
 
-    /* border: solid red 2px; */
-    position: relative;
-    /* margin-top: 100px; */
+#arrayTop_artists {
+    margin-bottom: 100px;
+}
+
+
+.artist {
     width: 50%;
+    height: auto;
+
+    margin-bottom: 30px;
+
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: auto;
 
     position: relative;
+    top: 20px;
+    /* border: solid red 2px; */
 }
-    .artist img {
-        width: 200px;
-        border-radius: 10%;
+
+.cont_img{
+    /* border: solid red 2px; */
+
+    position: relative;
+    overflow: hidden;
+    width: 200px;
+    max-height: 200px;
+
+    border-radius: 10px;
+
+    scale: 1;
+}
+
+#arrayTop_artists .cont_img {
+    scale: 1.5;
+}
+#arrayTop_artists h3 {
+    margin-top: 75px;
+}
+
+
+
+    .cont_img img {
+        width: 100%;
+        top: 2px;
         transition: all .3s cubic-bezier(.215, .61, .355, 1);
     }
+    .cont_img img:hover {
+        scale: 1.2;
+        overflow: hidden;
+        position: relative;
+
+        transition: all .3s cubic-bezier(.215, .61, .355, 1);
+    }
+
+
     .artist h3 {
-        margin-top: 10px;
-        color: white;
+        color: rgb(255, 255, 255);
+        margin-top: 20px;
     }
 
 
 
-.artist img:hover {
-    scale: 1.01;
-    border-radius: 25%;
-    transition: all .3s cubic-bezier(.215, .61, .355, 1);
-}
 
+#more_playlist .title {
+    margin-bottom: 60px;
+}
 
 #more_playlist #Array_artists {
     /* border: solid red 2px; */
@@ -66,19 +102,32 @@
     margin: 30px;
     background-color: rgba(255, 255, 255, 0.087);
     border-radius: 10px;
-    transition: all 1s cubic-bezier(.215, .61, .355, 1);
-
+    transition: all .2s cubic-bezier(.215, .61, .355, 1);
 }
 
-#more_playlist #Array_artists .artist:hover img {
-    /* border: solid red 2px; */
-    scale: 1.05;
-}
-#more_playlist #Array_artists .artist:hover {
-    /* border: solid red 2px; */
-    scale: 1.1;
-    opacity: 100%;
-    transition: all 1s cubic-bezier(.215, .61, .355, 1);
-}
+    #more_playlist #Array_artists .artist:hover .cont_img img {
+        transform: scale(1.1);
+        transition: all .5s cubic-bezier(.215, .61, .355, 1);
+    }
 
 
+
+    @media (max-width: 504px) {
+        .artist {
+            width: 100%;
+        }
+        #arrayTop_artists .right {
+            margin-left: 0px;
+        }
+
+        #arrayTop_artists .cont_img {
+            width: auto;
+
+            scale: 2;
+
+            margin-top: 50px;
+        }
+            #arrayTop_artists .artist h3 {
+                margin-top: 60px;
+            }
+    }

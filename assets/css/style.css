@@ -294,6 +294,7 @@ header img {
     .menu_foo h1 {
         margin: 10px;
         text-align: center;
+        cursor: pointer;
     }
 
 
