@@ -3,6 +3,8 @@
     margin: 100px 0;
 } */
 
+@import url(root.css);
+
 form {
     /* border: solid red 2px; */
     display: flex;
@@ -97,6 +99,7 @@ form button:hover {
 input:checked {
   accent-color: #000000; /* Funziona su browser moderni */
 }
+
 
 @media (max-width: 380px) {
     form label, form input, form textarea {

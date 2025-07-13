@@ -28,11 +28,12 @@ function openPrivacyPolicy() {
 
     privacyPolicy.classList.add('privacy-policy');
     privacyPolicy.innerHTML = `
-        <h2>Privacy Policy</h2>
-        <p>- Dati inviati dall' utente <br> I Dati inviati dall' utente non verranno in nessun modo trattati o divulgati ma verranno soltanto inviati alla mail info@urban.it per informazioni o richieste dell' utente stesso.
-        <br>Questo garantisce una maggiore privacy per gli utenti e una maggiore riservatezza dei dati
+        <h2>Privacy Policy</h2> <br>
+        <h4>- Dati inviati dall' utente </h4>
+        I Dati inviati dall' utente non verranno in nessun modo trattati o divulgati, ma verranno soltanto inviati alla mail info@urban.it per informazioni o richieste dell' utente stesso.
+        <br><br>Questo garantisce una maggiore privacy per gli utenti e una maggiore riservatezza dei dati
         
-        <br <br>
+        <br> <br>
         </p>
         <button id="closePrivacyPolicy">Close</button>
     `;

@@ -47,3 +47,7 @@
     opacity: 1;
     transition: all 1s cubic-bezier(.215, .61, .355, 1);
 }
+
+.menu_content a h1 {
+    cursor: pointer;
+}
