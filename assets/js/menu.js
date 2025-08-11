@@ -29,12 +29,13 @@ hamburger_menu.addEventListener('click', function() {
 // menu principale
 const aElement = [
     { id: 'home', href: 'index.html', text: 'Home' },
-    { id: 'artists', href: 'index.html#top_artists', text: 'Top artists' },
-    { id: 'playlists', href: 'index.html#playlist', text: 'Playlists' },
+    { id: 'artists', href: 'artists.html', text: 'Artists' },
+    { id: 'playlists', href: 'songs.html', text: 'Playlists' },
     { id: 'UrbanMic', href: 'coming.html', text: 'Urban on the mic' },
     { id: 'about', href: 'coming.html', text: 'About' },
     { id: 'team', href: 'coming.html', text: 'Team' },
-    { id: 'contact', href: 'contact.html', text: 'Contact' }
+    { id: 'contact', href: 'contact.html', text: 'Contact' },
+    { id: 'contact', href: 'policyPrivacy.html', text: 'Policy Privacy' }
 ];
 
 let menu_content = document.createElement('div');
