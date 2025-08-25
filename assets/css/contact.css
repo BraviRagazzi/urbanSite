@@ -100,7 +100,6 @@ input:checked {
   accent-color: #000000; /* Funziona su browser moderni */
 }
 
-
 @media (max-width: 380px) {
     form label, form input, form textarea {
         margin-top: 0;
