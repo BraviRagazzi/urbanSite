@@ -76,6 +76,7 @@
     @media (max-width: 502px) {
         #top_artists img {
             min-width: unset;
+            /*  */
         }
     }
   }
