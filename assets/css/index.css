@@ -38,7 +38,7 @@
 #top_artists img {
     width: 35%;
     height: 35%;
-    min-width: 100%;
+    min-width: 200px;
     object-fit: cover;
     border: solid red 2px;
 }
