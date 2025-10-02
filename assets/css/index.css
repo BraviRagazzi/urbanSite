@@ -27,6 +27,7 @@
 #prima_section img {
     width: 15%;
     position: fixed;
+    /* border: solid red 2px; */
 }
 
 
@@ -37,8 +38,9 @@
 #top_artists img {
     width: 35%;
     height: 35%;
-    min-width: 200px;
+    min-width: 100%;
     object-fit: cover;
+    border: solid red 2px;
 }
 
 .background_trasparent60 {
