@@ -30,7 +30,6 @@
 }
 
 
-
 #top_artists {
     /* border: solid red 2px; */
     padding: 0px 50px;
@@ -42,6 +41,15 @@
     object-fit: cover;
 }
 
+.background_trasparent60 {
+    position: absolute;
+    /* background-color: rgba(0, 0, 0, 0.637); */
+    background-color: none;
+        left: 0;
+    width: 100%;
+    height: fit-content;
+    /* border: solid red 2px; */
+}
 @media (max-width: 502px) {
     #top_artists img {
         width: 100px;
